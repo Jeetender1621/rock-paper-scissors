@@ -8,6 +8,7 @@ playerSelection = playerSelection.charAt(0).toLocaleUpperCase()+playerSelection.
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
+    if(playerSelection && computerSelection){
     if( (playerSelection === "Rock" && computerSelection === "Scissors") || (playerSelection === "Paper" && computerSelection === "Rock") || (playerSelection ==="Scissors" && computerSelection === "Paper")){
         return `You have choosen ${playerSelection}, Computer selected ${computerSelection}. You win!`
     }
@@ -20,7 +21,10 @@ function playRound(playerSelection, computerSelection) {
     else{
         return `Please enter only in(Rock, Paper, Scissors).`;
     }
-
+    }
+    else{
+        return 'You have cancelled the game!'
+    }
 }
   
 function getComputerChoice(){
