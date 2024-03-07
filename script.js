@@ -1,7 +1,10 @@
 alert("Welcome To Rock Paper Scissors Game");
 
 let  playerSelection = prompt("Wisely pick one of these Rock, Paper or Scissors?", "");
+
+if(playerSelection){
 playerSelection = playerSelection.toLocaleLowerCase();
+}
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
