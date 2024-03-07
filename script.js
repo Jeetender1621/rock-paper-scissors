@@ -3,15 +3,15 @@ alert("Welcome To Rock Paper Scissors Game");
 let  playerSelection = prompt("Wisely pick one of these Rock, Paper or Scissors?", "");
 
 if(playerSelection){
-playerSelection = playerSelection.toLocaleLowerCase();
+playerSelection = playerSelection.charAt(0).toLocaleUpperCase()+playerSelection.slice(1).toLocaleLowerCase();
 }
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
-    if( (playerSelection === "rock" && computerSelection === "scissors") || (playerSelection === "paper" && playerSelection === "rock") || (playerSelection ==="scissors" && computerSelection === "paper")){
+    if( (playerSelection === "Rock" && computerSelection === "Scissors") || (playerSelection === "Paper" && computerSelection === "Rock") || (playerSelection ==="Scissors" && computerSelection === "Paper")){
         return `You have choosen ${playerSelection}, Computer selected ${computerSelection}. You win!`
     }
-    else if((computerSelection === "rock" && playerSelection === "scissors") || (computerSelection === "paper" && playerSelection === "rock") || (computerSelection ==="scissors" && playerSelection === "paper")){
+    else if((computerSelection === "Rock" && playerSelection === "Scissors") || (computerSelection === "Paper" && playerSelection === "Rock") || (computerSelection ==="Scissors" && playerSelection === "Paper")){
         return `You have choosen ${playerSelection}, Computer selected ${computerSelection}. Computer wins!`
     }
     else if( computerSelection === playerSelection){
@@ -27,13 +27,13 @@ function getComputerChoice(){
     const number = Math.floor((Math.random()*3)) +1;
 
     if(number === 1){
-        return "rock"
+        return "Rock"
     }
     else if(number === 2){
-        return "paper"
+        return "Paper"
     }
     else{
-        return "scissors"
+        return "Scissors"
     }
 
 }
