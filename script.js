@@ -1,4 +1,4 @@
-alert("Welcome To Rock Paper Scissors Game");
+alert("Welcome To 'FAMOUS' Rock Paper Scissors Game");
 
 let  playerSelection = prompt("Wisely pick one of these Rock, Paper or Scissors?", "");
 
