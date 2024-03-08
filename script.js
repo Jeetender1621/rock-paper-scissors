@@ -20,6 +20,9 @@ function playRound(playerSelection, computerSelection) {
         tie++;
         return `It's a Tie! Play Again..`
     }
+    else{
+        return `Please Enter in(Rock, Paper, Scissors)!`
+    }
     }
 }
   
