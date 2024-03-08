@@ -46,7 +46,7 @@ function playGame(){
         if (playerSelection !== null) {
 
             if (playerSelection) {
-                playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
+                playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLocaleLowerCase();
             } else {
                 alert('Please enter only in (Rock, Paper, Scissors).');
                 return;
