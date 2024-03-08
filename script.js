@@ -72,7 +72,7 @@ const playGame = function () {
     } else if (playerScore < computerScore) {
         alert(`Total rounds played: ${--round}. Computer wins the game! Your score: ${playerScore}, Computer's score: ${computerScore}, Tie: ${tie}, Games cancelled or given Incorrect Input :${gamesNotPlayed}`);
     } else {
-        alert(`Total rounds played: ${--round}. It's a tie! Your score: ${playerScore}, Computer's score: ${computerScore}, Games cancelled or Given IncorrectInput :${gamesNotPlayed}`);
+        alert(`Total rounds played: ${--round}. It's a tie! Your score: ${playerScore}, Computer's score: ${computerScore}, Tie: ${tie},  Games cancelled or Given IncorrectInput :${gamesNotPlayed}`);
     }
 }
 //Start the game
