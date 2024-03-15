@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Project | Rock paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
+        <h2 class="game-click">Click To Play!</h2>
+    </div>
     <div class="buttons-container">
         <button class="rock">Rock</button>
         <button class="paper">Paper</button>
         <button class="scissors">Scissors</button>
     </div>
-    <p class="result"></p>
+    <div class="result-container">
+        <div class="result">**Check the results here**</div>
+        <div class="score">
+            <p>Player Score: <span class="player-score"></span></p>
+            <p>Computer Score: <span class="computer-score"></span></b>
+        </div>
+    </div>
     <script src="./script.js" defer></script>
 </body>
 </html>
