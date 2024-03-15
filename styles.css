@@ -71,3 +71,8 @@ h1{
     gap: 50px;
     align-self: center;
 }
+b{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    font-weight: lighter;
+}
